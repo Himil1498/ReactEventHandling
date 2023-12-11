@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import DoneRemainingStatus from './Components/DoneRemainingStatus';
+import ArrayExample from './Components/ArrayExample';
+import ConditionalRenderingExample from './Components/ConditionalRenderingExample';
+import ToggleButton from './Components/ToggleButton';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DoneRemainingStatus />
+      <hr />
+      <hr />
+      <hr />
+      <ArrayExample/>
+      <hr />
+      <hr />
+      <hr />
+      <ConditionalRenderingExample/>
+      <hr />
+      <hr />
+      <hr />
+      <ToggleButton/>
     </div>
   );
 }
